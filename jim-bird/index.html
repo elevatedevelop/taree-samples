@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en-AU">
-<head><meta name="robots" content="noindex, nofollow">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <title>Jim Bird Electrical | Electrician in Taree</title>
 <meta name="description" content="Jim Bird Electrical, Taree. Power, light, data, hot water and appliances. 5.0 from 54 Google reviews. Call 0419 248 838.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="img/hero-900.webp" fetchpriority="high">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="fonts/bricolage.woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-800.webp" fetchpriority="high">
 <style>
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:200 800;font-stretch:100%;font-display:swap;src:url(fonts/bricolage.woff2) format("woff2")}
 :root{
   --gold:#F5C542;      /* measured from the lightning bolt on Jim's logo (img/logo.webp) */
   --gold-deep:#E0AE22;
@@ -23,19 +23,19 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font:400 17px/1.55 Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);padding-bottom:var(--bar)}
+body{font:400 17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper);padding-bottom:var(--bar)}
 img{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3,.disp{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;letter-spacing:-.025em;line-height:.98;font-variation-settings:"opsz" 96}
+h1,h2,h3,.disp{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;letter-spacing:-.025em;line-height:.98;font-variation-settings:"opsz" 96}
 h2{font-size:clamp(38px,7vw,76px)}
 .wrap{width:min(100% - 40px,1180px);margin-inline:auto}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:60px;padding:0 28px;border-radius:999px;font:600 18px/1 Inter,sans-serif;text-decoration:none;border:2px solid var(--ink);background:var(--ink);color:var(--paper);transition:transform .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:60px;padding:0 28px;border-radius:999px;font:600 18px/1 system-ui,sans-serif;text-decoration:none;border:2px solid var(--ink);background:var(--ink);color:var(--paper);transition:transform .15s}
 .btn:active{transform:scale(.97)}
 .btn.ghost{background:transparent;color:var(--ink)}
 .btn.gold{background:var(--gold);border-color:var(--gold);color:var(--ink)}
 .btn.lite{background:var(--paper);border-color:var(--paper);color:var(--ink)}
 .btn svg{width:20px;height:20px;flex:none}
-.eyebrow{font:600 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.eyebrow{font:600 13px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 .stars{color:var(--gold-deep);letter-spacing:.06em;font-size:.95em}
 .on-dark .stars,.hero .stars{color:inherit}
 section{padding:72px 0}
@@ -51,21 +51,25 @@ section{padding:72px 0}
 @media(min-width:600px){.top .btn span.n{display:inline}.top .btn span.c{display:none}}
 
 /* hero: colour block, not a dark photo */
-.hero{background:var(--ink);color:var(--paper);padding:20px 0 48px;overflow:hidden}
+.hero{background:var(--ink);color:var(--paper);padding:14px 0 44px;overflow:hidden}
 .hero .btn.ghost{border-color:var(--paper);color:var(--paper)}
 .hero .wrap{display:grid;gap:18px}
 .hero .tile{order:-1}
-.hero h1{font-size:clamp(42px,11vw,104px);line-height:1.1;letter-spacing:-.02em}
+.hero h1{font-size:clamp(40px,10.4vw,104px);line-height:1.08;letter-spacing:-.02em}
+.hero h1 .kick{display:block;font:600 14px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .hero h1 em{font-style:normal;background:var(--gold);color:var(--ink);padding:0 .12em;border-radius:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .hero .who{display:none;color:rgba(251,248,240,.6)}
-.pill{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);padding:11px 14px;border-radius:999px;font:600 15px/1 Inter,sans-serif;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);padding:11px 14px;border-radius:999px;font:600 15px/1 system-ui,sans-serif;white-space:nowrap}
 .hero .sub{font-size:clamp(18px,2.4vw,24px);line-height:1.35;max-width:32ch;font-weight:400;margin-top:14px}
 .hero .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .hero .cta .btn{flex:1 1 220px;min-height:56px}
 .hero .cred{font-size:15px;color:rgba(251,248,240,.65);line-height:1.4;margin-top:10px}
 .hero .cred b{color:var(--paper);font-weight:600}
-.hero .hrs{margin-top:14px}
-.tile{position:relative;border-radius:var(--r);overflow:hidden;border:2px solid var(--paper);background:var(--ink-2);aspect-ratio:2/1;box-shadow:8px 8px 0 rgba(251,248,240,.18);margin-right:8px}
+.hero .obj{list-style:none;margin-top:12px;display:grid;gap:6px;font-size:15px;line-height:1.3;color:var(--paper)}
+.hero .obj li{display:flex;gap:9px;align-items:flex-start}
+.hero .obj li::before{content:"";flex:none;width:16px;height:16px;margin-top:2px;border-radius:50%;background:var(--gold) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 8.5l2.5 2.5L12 5.5" fill="none" stroke="%230B0B0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/12px no-repeat}
+.hero .src{margin-top:4px;font-size:13px}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;border:2px solid var(--paper);background:var(--ink-2);aspect-ratio:21/9;box-shadow:8px 8px 0 rgba(251,248,240,.18);margin-right:8px}
 .tile img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
 .tile .pill{position:absolute;left:12px;bottom:12px}
 .pill .stars{color:var(--gold)}
@@ -74,7 +78,6 @@ section{padding:72px 0}
   .hero .wrap{grid-template-columns:1.25fr .85fr;align-items:center;gap:56px}
   .hero .tile{order:0;aspect-ratio:1;max-width:500px;margin-left:auto;transform:rotate(-2deg);box-shadow:12px 12px 0 rgba(251,248,240,.18)}
   .hero .tile .pill{left:18px;bottom:18px;font-size:16px}
-  .hero .who{display:block;margin-bottom:22px}
   .hero .cta .btn{min-height:60px}
 }
 
@@ -93,6 +96,32 @@ section{padding:72px 0}
   .band .stat{padding:56px 40px 56px 0;border-bottom:0;border-right:1px solid var(--line)}
   .band .stat:last-child{border-right:0;padding-left:40px}
 }
+
+/* problem */
+.problem{background:#fff;border-bottom:2px solid var(--ink)}
+.pgrid{display:grid;gap:24px}
+.pq{border-left:4px solid var(--gold);padding-left:18px}
+.pq q{quotes:"\201C" "\201D";font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:clamp(22px,2.6vw,30px);line-height:1.22;letter-spacing:-.015em;display:block}
+.pq .by{margin-top:10px;font-size:15px;color:var(--mute)}
+.pq .by b{color:var(--ink);font-weight:600}
+@media(min-width:900px){.pgrid{grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}}
+
+/* faq */
+.faq{background:#fff;border-top:2px solid var(--ink)}
+.faq dl{display:grid;gap:12px}
+.faq .qa{border:2px solid var(--ink);border-radius:var(--r);padding:20px 22px;background:var(--paper)}
+.faq dt{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;letter-spacing:-.02em;line-height:1.1}
+.faq dd{margin-top:8px;color:var(--mute)}
+@media(min-width:900px){.faq dl{grid-template-columns:1fr 1fr;gap:16px}.faq .qa{padding:28px}}
+
+/* closing call band */
+.close{background:var(--ink);color:var(--paper);text-align:center}
+.close h2{font-size:clamp(40px,9vw,88px)}
+.close .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.close .cta .btn{flex:1 1 220px;max-width:360px}
+.close .cta .btn.ghost{border-color:var(--paper);color:var(--paper)}
+.close .r{margin-top:18px;font-size:15px;color:rgba(251,248,240,.7)}
+.close .r b{color:var(--gold);font-weight:600}
 
 /* headings */
 .head{margin-bottom:36px;display:grid;gap:14px}
@@ -175,16 +204,16 @@ section{padding:72px 0}
 .quote .proof q{quotes:"\201C" "\201D";font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:22px;line-height:1.25;display:block}
 .quote .proof .by{margin-top:8px;font-size:14px;color:rgba(251,248,240,.7)}
 form{display:grid;gap:12px;background:var(--paper);color:var(--ink);padding:24px;border-radius:var(--r)}
-form label{display:grid;gap:6px;font:600 14px/1 Inter,sans-serif}
-form input,form textarea{font:400 17px/1.4 Inter,sans-serif;padding:14px 16px;border:2px solid var(--ink);border-radius:14px;background:#fff;color:var(--ink);width:100%}
+form label{display:grid;gap:6px;font:600 14px/1 system-ui,sans-serif}
+form input,form textarea{font:400 17px/1.4 system-ui,sans-serif;padding:14px 16px;border:2px solid var(--ink);border-radius:14px;background:#fff;color:var(--ink);width:100%}
 form textarea{min-height:100px;resize:vertical}
 form .btn{width:100%;margin-top:6px}
 form .fine{font-size:13px;color:var(--mute);text-align:center}
 @media(min-width:900px){.quote .grid{grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}form{padding:32px}}
 
 /* sample-only sales layer (delete .sample-only blocks when live) */
-.ribbon{background:var(--ink);color:var(--paper);font:600 13px/1.2 Inter,sans-serif;display:flex;align-items:center;justify-content:center;gap:14px;padding:9px 14px;text-align:center}
-.ribbon button{background:none;border:1px solid rgba(251,248,240,.4);color:var(--paper);width:26px;height:26px;border-radius:50%;font-size:16px;line-height:1;cursor:pointer}
+.ribbon{background:var(--ink-2);color:var(--paper);font:600 12px/1.2 system-ui,sans-serif;display:flex;align-items:center;justify-content:center;gap:12px;padding:5px 14px;text-align:center;border-bottom:1px solid rgba(251,248,240,.15)}
+.ribbon button{background:none;border:1px solid rgba(251,248,240,.4);color:var(--paper);width:22px;height:22px;border-radius:50%;font-size:16px;line-height:1;cursor:pointer}
 .forjim{background:var(--paper);border-top:2px solid var(--ink)}
 .outs{display:grid;gap:12px}
 .out{border:2px solid var(--ink);border-radius:var(--r);padding:24px 22px;background:#fff;display:grid;gap:10px}
@@ -216,9 +245,9 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
 </style>
 </head>
 <body id="top">
-<div class="ribbon sample-only" id="ribbon"><span>Sample for Jim Bird Electrical by Front Page Local. Not live yet.</span><button type="button" aria-label="Hide" onclick="document.getElementById('ribbon').remove()">×</button></div>
+<div class="ribbon sample-only" id="ribbon"><span>Sample by Front Page Local. Not live yet.</span><button type="button" aria-label="Hide" onclick="document.getElementById('ribbon').remove()">×</button></div>
 
-<header class="top"><meta name="robots" content="noindex, nofollow">
+<header class="top">
   <div class="wrap">
     <a class="brand" href="#top"><img src="img/logo.webp" width="40" height="40" alt="">Jim Bird Electrical</a>
     <a class="btn" href="tel:0419248838"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2.1z"/></svg><span class="n">0419 248 838</span><span class="c">Call</span></a>
@@ -228,18 +257,22 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
 <section class="hero" id="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow who">Electrician · 6 Mahogany Cres, Taree</p>
-      <h1>“Jim is honestly the <em>gold standard</em> of tradies.”</h1>
+      <h1><span class="kick">Electrician in Taree</span>“Jim is honestly the <em>gold standard</em> of tradies.”</h1>
       <p class="cred"><b>Owen N.</b>, Google review, a year ago</p>
-      <p class="sub">Electrician in Taree. Power, light, data, hot water and appliances.</p>
+      <p class="sub">Power, light, data, hot water and appliances. 6 Mahogany Cres, Taree.</p>
       <div class="cta">
         <a class="btn gold" href="tel:0419248838">Call 0419 248 838</a>
         <a class="btn ghost" href="#quote">Get a quote</a>
       </div>
-      <p class="cred hrs"><b>Open</b> Mon to Thu 8 am to 4 pm · Fri 8 am to 2 pm</p>
+      <ul class="obj">
+        <li>Turns up when he says he will</li>
+        <li>Actually calls you back</li>
+        <li>Quick, polite, friendly and very informative</li>
+      </ul>
+      <p class="cred src">Owen N. and B Bear, Google reviews</p>
     </div>
     <div class="tile">
-      <img src="img/hero-900.webp" width="900" height="900" alt="Pendant lights fitted by Jim Bird Electrical" fetchpriority="high" decoding="async">
+      <img src="img/hero-800.webp" width="800" height="800" alt="Pendant lights fitted by Jim Bird Electrical" fetchpriority="high" decoding="async">
       <span class="pill"><span class="stars">★★★★★</span> 5.0 from 54 Google reviews</span>
     </div>
   </div>
@@ -247,14 +280,29 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
 
 <div class="band on-dark">
   <div class="wrap">
-    <div class="stat"><div class="disp">5.0</div><p>Google rating</p><small>54 reviews, as on Google 10 Nov 2026</small></div>
+    <div class="stat"><div class="disp">5.0</div><p>Google rating</p><small>As on Google 10 Nov 2026</small></div>
     <div class="stat"><div class="disp">54</div><p>Google reviews</p><small>Count as on Google 10 Nov 2026</small></div>
     <div class="stat">
-      <q>He turns up when he says he will, keeps you updated, and actually calls you back</q>
-      <p class="by"><b>Owen N.</b> · Google review · a year ago</p>
+      <q>They are cheerful, very respectful and absolutely professional.</q>
+      <p class="by"><b>Ruth S.</b> · Google review · 3 months ago</p>
     </div>
   </div>
 </div>
+
+<section class="problem" id="problem">
+  <div class="wrap">
+    <div class="pgrid">
+      <div>
+        <span class="eyebrow">The usual problem</span>
+        <h2>Waiting on a sparky who said he would call back?</h2>
+      </div>
+      <div class="pq">
+        <q>He turns up when he says he will, keeps you updated, and actually calls you back</q>
+        <p class="by"><b>Owen N.</b> · Google review · a year ago</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="services" id="services">
   <div class="wrap">
@@ -269,9 +317,9 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
       <div class="cell"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg><h3>Data</h3></div>
       <div class="cell"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 4-6 7-6 11a6 6 0 0 0 12 0c0-4-3-7-6-11z"/></svg><h3>Hot water</h3></div>
       <div class="cell"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M8 6h.01M12 6h.01"/></svg><h3>Appliances</h3></div>
-      <div class="cell ink w3"><h3>Ceiling fans</h3><div><q>I recently had new ceiling fans installed by Jim Bird Electrical.</q><p class="src">B Bear, Google review</p></div></div>
-      <div class="cell wide"><h3>Exhaust fans</h3><div><q>replacing an exhaust fan in my elderly parents bathroom</q><p class="src">B Bear, Google review</p></div></div>
-      <div class="cell gold wide"><h3>Sensor lights</h3><div><q>replacing sensor lights</q><p class="src">Clare S., Google review</p></div></div>
+      <div class="cell ink w3"><h3>Ceiling fans</h3><p class="src">Named by B Bear in a Google review</p></div>
+      <div class="cell wide"><h3>Exhaust fans</h3><p class="src">Named by B Bear in a Google review</p></div>
+      <div class="cell gold wide"><h3>Sensor lights</h3><p class="src">Named by Clare S. in a Google review</p></div>
     </div>
   </div>
 </section>
@@ -281,7 +329,7 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
     <div class="head" data-rv>
       <span class="eyebrow" style="color:var(--gold)">Real work</span>
       <h2>Photos from his own Google listing.</h2>
-      <p>Two photos Jim put on Google. No stock, nothing staged.</p>
+      <p>Two photos Jim put on Google. No stock.</p>
     </div>
     <div class="gal">
       <figure><img src="img/work-oven.webp" width="760" height="1604" alt="A new electric oven and cooktop connected by Jim Bird Electrical" loading="lazy" decoding="async"><figcaption>New electric oven and cooktop connected</figcaption></figure>
@@ -351,6 +399,20 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
   </div>
 </section>
 
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="head" data-rv>
+      <span class="eyebrow">Questions</span>
+      <h2>Quick answers.</h2>
+    </div>
+    <dl>
+      <div class="qa"><dt>What does Jim do?</dt><dd>Power, light, data, hot water and appliances, as on his logo. Customers also mention ceiling fans, exhaust fans and sensor lights.</dd></div>
+      <div class="qa"><dt>When is he open?</dt><dd>Mon to Thu 8 am to 4 pm, Friday 8 am to 2 pm. Closed Saturday and Sunday.</dd></div>
+      <div class="qa"><dt>How do I get a quote?</dt><dd>Ring 0419 248 838, or send the three-box form below.</dd></div>
+    </dl>
+  </div>
+</section>
+
 <section class="quote" id="quote">
   <div class="wrap">
     <div class="grid">
@@ -368,9 +430,21 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
         <label>Mobile number<input type="tel" name="mobile" autocomplete="tel" placeholder="04xx xxx xxx"></label>
         <label>What do you need?<textarea name="need" placeholder="e.g. two ceiling fans in the bedrooms"></textarea></label>
         <button class="btn gold" type="submit">Get a quote</button>
-        <p class="fine">Sample form. Not connected yet.</p>
+        <p class="fine"><b>Sample form.</b> Not connected: nothing is sent yet. Ring 0419 248 838.</p>
       </form>
     </div>
+  </div>
+</section>
+
+<section class="close" id="call">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold)">One more thing</span>
+    <h2 style="margin-top:14px">Ring Jim.</h2>
+    <div class="cta">
+      <a class="btn gold" href="tel:0419248838">Call 0419 248 838</a>
+      <a class="btn ghost" href="#quote">Get a quote</a>
+    </div>
+    <p class="r"><b>★ 5.0</b> · 54 Google reviews · “Jim is honestly the gold standard of tradies.” Owen N., Google review, a year ago</p>
   </div>
 </section>
 
@@ -383,8 +457,8 @@ footer .fine{margin-top:28px;font-size:13px;color:var(--mute);max-width:70ch}
     </div>
     <div class="outs">
       <div class="out"><span class="n">01</span><h3>More calls from Google</h3><p>A fast page with a call button in the first screen, and the Google listing tuned to match it.</p></div>
-      <div class="out"><span class="n">02</span><h3>No missed call goes cold</h3><p>Ring while Jim is on a job and a text goes straight back, so the enquiry waits for him.</p></div>
-      <div class="out"><span class="n">03</span><h3>Counted and kept fresh</h3><p>A one-page monthly report of calls and enquiries, and we keep the page and listing current.</p></div>
+      <div class="out"><span class="n">02</span><h3>Google listing kept in step</h3><p>Hours, services, photos and the review link on the Google listing kept matching the page.</p></div>
+      <div class="out"><span class="n">03</span><h3>Counted and kept fresh</h3><p>A one-page monthly report of call taps and form enquiries, and the page kept current.</p></div>
     </div>
   </div>
 </section>
